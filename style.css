@@ -1,3 +1,246 @@
 ---
 layout: style
 ---
+
+/* ===== Services Section ===== */
+.services-cards-section {
+  background: #111111;
+  padding: 90px 0;
+}
+
+.services-cards-section .section-heading {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.services-cards-section .section-subheading {
+  color: #bfbfbf;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.services-card-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-card-row > .col-md-6,
+.services-card-row > .col-sm-12 {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+/* ===== Card ===== */
+.service-card {
+  background: #171717;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 740px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.45);
+}
+
+/* ===== Top image ===== */
+.service-card-image {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  background: #0f0f0f;
+  flex-shrink: 0;
+}
+
+.service-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.service-card:hover .service-card-image img {
+  transform: scale(1.05);
+}
+
+.service-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.04) 0%,
+    rgba(0, 0, 0, 0.14) 50%,
+    rgba(0, 0, 0, 0.28) 100%
+  );
+  pointer-events: none;
+}
+
+/* ===== Bottom content ===== */
+.service-card-content {
+  background: #171717;
+  padding: 30px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.service-card-content h4 {
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 16px;
+  min-height: 82px;
+}
+
+.service-card-content p {
+  color: #d4d4d4;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  min-height: 90px;
+}
+
+.service-card-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+  min-height: 116px;
+}
+
+.service-card-content ul li {
+  color: #efefef;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.service-card-content ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #d4af37;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.service-btn {
+  margin-top: auto;
+  align-self: flex-start;
+  background-color: #d4af37;
+  border: 1px solid #d4af37;
+  color: #111111;
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-transform: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.18);
+}
+
+.service-btn:hover,
+.service-btn:focus {
+  background-color: #bf9828;
+  border-color: #bf9828;
+  color: #111111;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 991px) {
+  .service-card {
+    min-height: 660px;
+  }
+
+  .service-card-image {
+    height: 260px;
+  }
+
+  .service-card-content h4 {
+    font-size: 28px;
+    min-height: auto;
+  }
+
+  .service-card-content p,
+  .service-card-content ul {
+    min-height: auto;
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 767px) {
+  .services-cards-section {
+    padding: 60px 0;
+  }
+
+  .services-cards-section .section-heading {
+    font-size: 34px;
+  }
+
+  .services-cards-section .section-subheading {
+    font-size: 15px;
+    margin-bottom: 35px;
+    padding: 0 10px;
+  }
+
+  .services-card-row > .col-md-6,
+  .services-card-row > .col-sm-12 {
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+
+  .service-card:hover {
+    transform: none;
+  }
+
+  .service-card-image {
+    height: 230px;
+  }
+
+  .service-card:hover .service-card-image img {
+    transform: none;
+  }
+
+  .service-card-content {
+    padding: 24px 20px 22px;
+  }
+
+  .service-card-content h4 {
+    font-size: 24px;
+    min-height: auto;
+  }
+
+  .service-card-content p {
+    font-size: 15px;
+  }
+
+  .service-card-content ul li {
+    font-size: 14px;
+  }
+
+  .service-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
