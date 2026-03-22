@@ -670,3 +670,325 @@ layout: style
     font-size: 15px;
   }
 }
+
+/* ===== PROCESS Section END===== */
+/* ===== CONTACT Section BEGIN===== */
+/* ========================================
+   CONTACT SECTION
+======================================== */
+.contact-section {
+  position: relative;
+  padding: 110px 0 100px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at top center,
+      rgba(255, 180, 50, 0.22),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom center,
+      rgba(255, 180, 50, 0.14),
+      transparent 28%
+    ),
+    linear-gradient(180deg, #090909 0%, #120c08 45%, #090909 100%);
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/img/header-bg.png") center/cover no-repeat;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* heading */
+.contact-section .section-heading {
+  margin: 0 0 28px;
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contact-subtext {
+  margin: 0 auto 55px;
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 22px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* email */
+.contact-email-wrap {
+  margin-bottom: 55px;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  color: #d8a33a;
+  font-size: 34px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.3;
+  text-shadow: 0 0 12px rgba(212, 164, 55, 0.18);
+  transition: all 0.3s ease;
+}
+
+.contact-email:hover,
+.contact-email:focus {
+  color: #f0c35a;
+  text-decoration: none;
+}
+
+.contact-email i {
+  font-size: 42px;
+  width: 54px;
+  text-align: center;
+}
+
+/* follow */
+.contact-follow-title {
+  margin: 0 0 24px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  margin-bottom: 75px;
+}
+
+.social-circle {
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #d8a33a;
+  font-size: 42px;
+  background: rgba(8, 8, 8, 0.78);
+  border: 2px solid rgba(212, 164, 55, 0.75);
+  box-shadow:
+    0 0 0 3px rgba(212, 164, 55, 0.08),
+    0 0 18px rgba(212, 164, 55, 0.28),
+    inset 0 0 16px rgba(255, 208, 90, 0.06);
+  transition: all 0.3s ease;
+}
+
+.social-circle:hover,
+.social-circle:focus {
+  color: #f3c761;
+  text-decoration: none;
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 0 3px rgba(212, 164, 55, 0.12),
+    0 0 26px rgba(212, 164, 55, 0.4),
+    inset 0 0 18px rgba(255, 208, 90, 0.09);
+}
+
+/* divider */
+.contact-divider {
+  width: 100%;
+  max-width: 1000px;
+  height: 1px;
+  margin: 0 auto 70px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 164, 55, 0.45),
+    transparent
+  );
+  position: relative;
+}
+
+.contact-divider::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 3px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, transparent, #f5c55e, transparent);
+  box-shadow: 0 0 15px rgba(245, 197, 94, 0.8);
+}
+
+/* button */
+.contact-quote-btn {
+  display: inline-block;
+  min-width: 540px;
+  padding: 24px 40px;
+  border: 1px solid rgba(212, 164, 55, 0.65);
+  border-radius: 6px;
+  background: rgba(20, 12, 8, 0.5);
+  color: #d8a33a;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 210, 90, 0.08),
+    0 0 16px rgba(212, 164, 55, 0.12);
+  transition: all 0.3s ease;
+}
+
+.contact-quote-btn:hover,
+.contact-quote-btn:focus {
+  color: #f3c761;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 210, 90, 0.12),
+    0 0 22px rgba(212, 164, 55, 0.18);
+}
+
+/* responsive */
+@media (max-width: 991px) {
+  .contact-section {
+    padding: 90px 0 85px;
+  }
+
+  .contact-section .section-heading {
+    font-size: 46px;
+  }
+
+  .contact-subtext {
+    font-size: 19px;
+  }
+
+  .contact-email {
+    font-size: 28px;
+  }
+
+  .contact-email i {
+    font-size: 36px;
+    width: 44px;
+  }
+
+  .contact-quote-btn {
+    min-width: 420px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-section {
+    padding: 70px 0 70px;
+  }
+
+  .contact-section .section-heading {
+    font-size: 34px;
+  }
+
+  .contact-subtext {
+    margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 1.7;
+    padding: 0 12px;
+  }
+
+  .contact-email-wrap {
+    margin-bottom: 40px;
+  }
+
+  .contact-email {
+    gap: 12px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-email i {
+    font-size: 28px;
+    width: auto;
+  }
+
+  .contact-follow-title {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .contact-socials {
+    gap: 18px;
+    margin-bottom: 50px;
+  }
+
+  .social-circle {
+    width: 74px;
+    height: 74px;
+    font-size: 32px;
+  }
+
+  .contact-divider {
+    margin-bottom: 45px;
+  }
+
+  .contact-quote-btn {
+  display: inline-block;
+  padding: 16px 32px;              /* ⭐ 收紧 */
+  border-radius: 12px;             /* ⭐ 更圆润 */
+
+  background: linear-gradient(
+    180deg,
+    rgba(40, 25, 10, 0.9),
+    rgba(20, 12, 8, 0.95)
+  );
+
+  border: 1px solid rgba(212, 164, 55, 0.5);
+
+  color: #e7b84a;
+  font-size: 18px;                /* ⭐ 小一点 */
+  font-weight: 600;
+
+  letter-spacing: 0.5px;          /* ⭐ 不要太散 */
+  text-transform: none;           /* ⭐ 去掉全大写 */
+
+  text-decoration: none;
+  text-align: center;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 220, 120, 0.15);
+
+  transition: all 0.25s ease;
+}
+
+.contact-quote-btn:hover {
+  transform: translateY(-2px);
+  color: #ffd36a;
+
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.35),
+    0 0 14px rgba(212, 164, 55, 0.15);
+}
+.contact-cta-note {
+  margin: 0 0 18px;
+  color: #ffffff;               
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+
+  text-shadow:
+    0 2px 6px rgba(0,0,0,0.6),
+    0 0 10px rgba(0,0,0,0.4);
+
+  opacity: 0.95;
+}
+/* ===== CONTACT Section END===== */
