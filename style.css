@@ -244,3 +244,164 @@ layout: style
     text-align: center;
   }
 }
+
+/* ===== END OF Services Section  ===== */
+/* ===== WHY US Section BEGIN===== */
+/* ================= WHY US FINAL ================= */
+
+.why-us-section {
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+  background: #111111;
+}
+
+/* ===== 背景（黑金高级感） ===== */
+.why-us-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(212, 175, 55, 0.25),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(212, 175, 55, 0.18),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(212, 175, 55, 0.1),
+      transparent 50%
+    ),
+    linear-gradient(180deg, #1a1a1a 0%, #111111 50%, #0c0c0c 100%);
+}
+
+.why-us-bg:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+  background-size: 120px 120px;
+  opacity: 0.15;
+}
+
+/* ===== 内容 ===== */
+.why-us-content {
+  position: relative;
+  z-index: 2;
+}
+
+.why-us-section .section-heading {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.why-us-section .section-subheading {
+  color: #cfcfcf;
+  font-size: 17px;
+  margin-bottom: 60px;
+}
+
+/* ===== Grid ===== */
+.why-us-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ===== 卡片 ===== */
+.why-us-card {
+  background: linear-gradient(145deg, #1a1a1a, #111111);
+  border-radius: 14px;
+  padding: 38px 28px;
+  text-align: center;
+  height: 100%;
+  min-height: 280px;
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+/* hover 金边光效 */
+.why-us-card:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(212, 175, 55, 0.4),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.why-us-card:hover:before {
+  opacity: 1;
+}
+
+.why-us-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== ICON ===== */
+.why-us-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background: #0f0f0f; */
+  border-radius: 50%;
+  /* border: 1px solid rgba(212, 175, 55, 0.3); */
+}
+
+.why-us-icon img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+
+/* ===== 文字 ===== */
+.why-us-card h4 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.why-us-card p {
+  color: #cfcfcf;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 991px) {
+  .why-us-section {
+    padding: 80px 0;
+  }
+
+  .why-us-section .section-heading {
+    font-size: 30px;
+  }
+
+  .why-us-card {
+    margin-bottom: 25px;
+  }
+}
