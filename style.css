@@ -941,54 +941,199 @@ layout: style
   }
 
   .contact-quote-btn {
-  display: inline-block;
-  padding: 16px 32px;              /* ⭐ 收紧 */
-  border-radius: 12px;             /* ⭐ 更圆润 */
+    display: inline-block;
+    padding: 16px 32px; /* ⭐ 收紧 */
+    border-radius: 12px; /* ⭐ 更圆润 */
 
-  background: linear-gradient(
-    180deg,
-    rgba(40, 25, 10, 0.9),
-    rgba(20, 12, 8, 0.95)
-  );
+    background: linear-gradient(
+      180deg,
+      rgba(40, 25, 10, 0.9),
+      rgba(20, 12, 8, 0.95)
+    );
 
+    border: 1px solid rgba(212, 164, 55, 0.5);
+
+    color: #e7b84a;
+    font-size: 18px; /* ⭐ 小一点 */
+    font-weight: 600;
+
+    letter-spacing: 0.5px; /* ⭐ 不要太散 */
+    text-transform: none; /* ⭐ 去掉全大写 */
+
+    text-decoration: none;
+    text-align: center;
+
+    box-shadow:
+      0 6px 18px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 220, 120, 0.15);
+
+    transition: all 0.25s ease;
+  }
+
+  .contact-quote-btn:hover {
+    transform: translateY(-2px);
+    color: #ffd36a;
+
+    box-shadow:
+      0 10px 22px rgba(0, 0, 0, 0.35),
+      0 0 14px rgba(212, 164, 55, 0.15);
+  }
+  .contact-cta-note {
+    margin: 0 0 18px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+
+    text-shadow:
+      0 2px 6px rgba(0, 0, 0, 0.6),
+      0 0 10px rgba(0, 0, 0, 0.4);
+
+    opacity: 0.95;
+  }
+  /* ===== CONTACT Section END===== */
+
+  /*Project section begin*/
+  .portfolio-carousel {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-carousel .carousel-inner > .item > img {
+    margin: 0 auto;
+    max-height: 550px;
+    object-fit: contain;
+  }
+
+  .portfolio-carousel .carousel-indicators {
+    bottom: -30px;
+  }
+
+  .portfolio-carousel .carousel-indicators li {
+    border: 1px solid #d4a437;
+  }
+
+  .portfolio-carousel .carousel-indicators .active {
+    background-color: #d4a437;
+  }
+
+  .portfolio-carousel .carousel-control.left,
+  .portfolio-carousel .carousel-control.right {
+    background: none;
+    width: 12%;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .portfolio-carousel .carousel-control.left {
+    justify-content: flex-start;
+  }
+
+  .portfolio-carousel .carousel-control.right {
+    justify-content: flex-end;
+  }
+
+  .portfolio-carousel .arrow-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.48);
+    border: 1px solid rgba(212, 164, 55, 0.5);
+
+    color: #d4a437;
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 400;
+
+    box-shadow:
+      0 0 14px rgba(212, 164, 55, 0.2),
+      inset 0 0 10px rgba(255, 205, 90, 0.08);
+
+    transition: all 0.25s ease;
+  }
+
+  .portfolio-carousel .carousel-control:hover .arrow-icon {
+    color: #ffd86b;
+    border-color: rgba(255, 216, 107, 0.7);
+    transform: scale(1.08);
+    box-shadow:
+      0 0 18px rgba(212, 164, 55, 0.35),
+      inset 0 0 12px rgba(255, 205, 90, 0.12);
+  }
+}
+
+.portfolio-carousel {
+  margin-bottom: 30px;
+}
+
+.portfolio-carousel .carousel-inner > .item > img {
+  margin: 0 auto;
+  max-height: 550px;
+  object-fit: contain;
+}
+
+.portfolio-carousel .carousel-indicators {
+  bottom: -30px;
+}
+
+.portfolio-carousel .carousel-indicators li {
+  border: 1px solid #d4a437;
+}
+
+.portfolio-carousel .carousel-indicators .active {
+  background-color: #d4a437;
+}
+
+.portfolio-carousel .carousel-control.left,
+.portfolio-carousel .carousel-control.right {
+  background: none;
+  width: 12%;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-carousel .carousel-control.left {
+  justify-content: flex-start;
+}
+
+.portfolio-carousel .carousel-control.right {
+  justify-content: flex-end;
+}
+
+.portfolio-carousel .arrow-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.48);
   border: 1px solid rgba(212, 164, 55, 0.5);
 
-  color: #e7b84a;
-  font-size: 18px;                /* ⭐ 小一点 */
-  font-weight: 600;
-
-  letter-spacing: 0.5px;          /* ⭐ 不要太散 */
-  text-transform: none;           /* ⭐ 去掉全大写 */
-
-  text-decoration: none;
-  text-align: center;
+  color: #d4a437;
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 400;
 
   box-shadow:
-    0 6px 18px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 220, 120, 0.15);
+    0 0 14px rgba(212, 164, 55, 0.2),
+    inset 0 0 10px rgba(255, 205, 90, 0.08);
 
   transition: all 0.25s ease;
 }
 
-.contact-quote-btn:hover {
-  transform: translateY(-2px);
-  color: #ffd36a;
-
+.portfolio-carousel .carousel-control:hover .arrow-icon {
+  color: #ffd86b;
+  border-color: rgba(255, 216, 107, 0.7);
+  transform: scale(1.08);
   box-shadow:
-    0 10px 22px rgba(0, 0, 0, 0.35),
-    0 0 14px rgba(212, 164, 55, 0.15);
+    0 0 18px rgba(212, 164, 55, 0.35),
+    inset 0 0 12px rgba(255, 205, 90, 0.12);
 }
-.contact-cta-note {
-  margin: 0 0 18px;
-  color: #ffffff;               
-  font-size: 18px;
-  line-height: 1.6;
-  text-align: center;
-
-  text-shadow:
-    0 2px 6px rgba(0,0,0,0.6),
-    0 0 10px rgba(0,0,0,0.4);
-
-  opacity: 0.95;
-}
-/* ===== CONTACT Section END===== */
+/*Project Section END*/

@@ -1,15 +1,20 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: Golf Simulator Panels Project No.1
+# subtitle: Website Design
 layout: default
 modal-id: 1
-date: 2014-07-18
-img: dreams.png
-thumbnail: dreams-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+date: 2025-03-01
+img: golf1-1.jpg
+# thumbnail: dreams-thumbnail.png
+# alt: image-alt
+project-date: March 2025
+# client: Start Bootstrap
+# category: Web Development
 
+gallery:
+  - golf1-1.jpg
+  - golf1-2.jpg
+  - golf1-3.jpg
+
+description: Golf Simulator Panels for a Size 8*10*16 ft room
 ---

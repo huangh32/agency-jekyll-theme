@@ -1,15 +1,22 @@
 ---
-title: Treehouse
-subtitle: Website Design
+title: Acoustic Panels Project No.1
+# subtitle: Website Design
 layout: default
 modal-id: 4
-date: 2014-07-15
-img: treehouse.png
-thumbnail: treehouse-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+date: 2025-11-01
+img: acoustic1-1.jpg
+# thumbnail: dreams-thumbnail.png
+# alt: image-alt
+project-date: Nov 2025
+# client: Start Bootstrap
+# category: Web Development
 
+gallery:
+  - acoustic1-1.jpg
+  - acoustic1-2.jpg
+  - acoustic1-3.jpg
+  - acoustic1-4.jpg
+  - acoustic1-5.jpg
+
+description: Acoustic Panels made of black fabric, for a music studio
 ---

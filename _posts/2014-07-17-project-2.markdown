@@ -1,15 +1,19 @@
 ---
-title: Escape
-subtitle: Website Design
+title: Golf Simulator Panels Project No.2
+# subtitle: Website Design
 layout: default
 modal-id: 2
-date: 2014-07-17
-img: escape.png
-thumbnail: escape-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+date: 2025-07-01
+img: golf2-1.jpg
+# thumbnail: dreams-thumbnail.png
+# alt: image-alt
+project-date: July 2025
+# client: Start Bootstrap
+# category: Web Development
 
+gallery:
+  - golf2-1.jpg
+  - golf2-2.jpg
+
+description: Golf Simulator Panels for a Size 10*10*16 ft room
 ---
