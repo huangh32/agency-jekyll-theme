@@ -1,201 +1,79 @@
 <section id="booking-page" class="booking-page-section">
+  <div class="booking-bg-glow booking-glow-1"></div>
+  <div class="booking-bg-glow booking-glow-2"></div>
+
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <span class="booking-kicker">BOOK A CALL</span>
-        <h1 class="booking-title">Schedule a Consultation</h1>
+        <span class="booking-kicker">BOOK A CONSULTATION</span>
+        <h1 class="booking-title">Let’s Talk About Your Space</h1>
         <p class="booking-subtitle">
-          Choose a time that works for you and leave your contact details. We’ll
-          call you back at your selected time.
+          Choose a time that works for you and book a consultation directly
+          online.
         </p>
       </div>
     </div>
 
     <div class="row booking-main-row">
-      <div class="col-lg-6 col-md-6">
-        <div class="booking-card">
-          <h3>Select a Time</h3>
-          <p class="booking-help-text">Available consultation times</p>
+      <div class="col-lg-5 col-md-5">
+        <div class="booking-info-card">
+          <span class="booking-info-tag">Proudly Canadian-Owned</span>
 
-          <div class="booking-slots" id="bookingSlots">
-            <button
-              type="button"
-              class="booking-slot"
-              data-slot="Monday 10:00 AM"
-            >
-              Monday 10:00 AM
-            </button>
-            <button
-              type="button"
-              class="booking-slot"
-              data-slot="Monday 2:00 PM"
-            >
-              Monday 2:00 PM
-            </button>
-            <button
-              type="button"
-              class="booking-slot"
-              data-slot="Tuesday 10:00 AM"
-            >
-              Tuesday 10:00 AM
-            </button>
-            <button
-              type="button"
-              class="booking-slot"
-              data-slot="Tuesday 2:00 PM"
-            >
-              Tuesday 2:00 PM
-            </button>
-            <button
-              type="button"
-              class="booking-slot"
-              data-slot="Wednesday 10:00 AM"
-            >
-              Wednesday 10:00 AM
-            </button>
-            <button
-              type="button"
-              class="booking-slot"
-              data-slot="Wednesday 2:00 PM"
-            >
-              Wednesday 2:00 PM
-            </button>
-            <button
-              type="button"
-              class="booking-slot"
-              data-slot="Thursday 10:00 AM"
-            >
-              Thursday 10:00 AM
-            </button>
-            <button
-              type="button"
-              class="booking-slot"
-              data-slot="Thursday 2:00 PM"
-            >
-              Thursday 2:00 PM
-            </button>
-            <button
-              type="button"
-              class="booking-slot"
-              data-slot="Friday 10:00 AM"
-            >
-              Friday 10:00 AM
-            </button>
-            <button
-              type="button"
-              class="booking-slot"
-              data-slot="Friday 2:00 PM"
-            >
-              Friday 2:00 PM
-            </button>
+          <h2 class="booking-info-title">
+            Custom acoustic and golf panel solutions built for real homes.
+          </h2>
+
+          <p class="booking-info-text">
+            Based in <strong>Ancaster, Ontario</strong>, we help homeowners
+            create better spaces with custom acoustic panels and golf simulator
+            protection panels designed to look refined, feel intentional, and
+            perform beautifully.
+          </p>
+
+          <p class="booking-info-text">
+            Use the booking calendar to choose a time that works for you. We’ll
+            connect with you to learn more about your project, answer your
+            questions, and discuss the right solution for your space.
+          </p>
+
+          <div class="booking-highlight-box">
+            <h3>Serving Southern Ontario</h3>
+            <p>
+              Hamilton · Brantford · Burlington · Toronto · London · Windsor
+            </p>
           </div>
 
-          <div class="selected-slot-box">
-            <span class="selected-slot-label">Selected Time:</span>
-            <span id="selectedSlotText">Please select a time slot</span>
+          <div class="booking-contact-box">
+            <div class="booking-contact-item">
+              <span class="booking-contact-label">Email</span>
+              <a href="mailto:jasonyu567@gmail.com">jasonyu567@gmail.com</a>
+            </div>
+
+            <div class="booking-contact-item">
+              <span class="booking-contact-label">Location</span>
+              <span>Ancaster, Ontario, Canada</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-6 col-md-6">
-        <div class="booking-card">
-          <h3>Your Details</h3>
-          <p class="booking-help-text">Tell us how to reach you</p>
+      <div class="col-lg-7 col-md-7">
+        <div class="booking-calendar-card">
+          <div class="booking-calendar-top">
+            <h3>Book Your Preferred Time</h3>
+            <p>Select an available time slot below.</p>
+          </div>
 
-          <!-- 把 action 换成你自己的 Formspree 地址 -->
-          <form
-            id="bookingForm"
-            action="https://formspree.io/f/YOUR_FORM_ID"
-            method="POST"
-            class="booking-form"
-          >
-            <input type="hidden" name="selected_time" id="selectedSlotInput" />
-
-            <div class="booking-form-group">
-              <label for="bookingName">Full Name</label>
-              <input type="text" id="bookingName" name="name" required />
-            </div>
-
-            <div class="booking-form-group">
-              <label for="bookingEmail">Email</label>
-              <input type="email" id="bookingEmail" name="email" required />
-            </div>
-
-            <div class="booking-form-group">
-              <label for="bookingPhone">Phone Number</label>
-              <input type="tel" id="bookingPhone" name="phone" required />
-            </div>
-
-            <div class="booking-form-group">
-              <label for="bookingLocation">Location</label>
-              <input
-                type="text"
-                id="bookingLocation"
-                name="location"
-                placeholder="Hamilton, Burlington, Toronto..."
-              />
-            </div>
-
-            <div class="booking-form-group">
-              <label for="bookingProject">Project Type</label>
-              <select id="bookingProject" name="project_type">
-                <option value="">Select one</option>
-                <option value="Golf Simulator Panels">
-                  Golf Simulator Panels
-                </option>
-                <option value="Acoustic Panels">Acoustic Panels</option>
-                <option value="Both">Both</option>
-              </select>
-            </div>
-
-            <div class="booking-form-group">
-              <label for="bookingMessage">Additional Notes</label>
-              <textarea
-                id="bookingMessage"
-                name="message"
-                rows="5"
-                placeholder="Tell us a little about your project..."
-              ></textarea>
-            </div>
-
-            <button type="submit" class="booking-submit-btn">
-              Request My Call
-            </button>
-
-            <p class="booking-note">
-              By submitting this form, you’re requesting a callback at your
-              selected time.
-            </p>
-          </form>
+          <div class="booking-embed-shell">
+            <iframe
+              src="https://koalendar.com/e/YOUR-KOALENDAR-LINK?embed=true"
+              class="booking-iframe"
+              frameborder="0"
+              title="Book a consultation"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const slotButtons = document.querySelectorAll(".booking-slot");
-    const selectedSlotText = document.getElementById("selectedSlotText");
-    const selectedSlotInput = document.getElementById("selectedSlotInput");
-    const bookingForm = document.getElementById("bookingForm");
-
-    slotButtons.forEach((button) => {
-      button.addEventListener("click", function () {
-        slotButtons.forEach((btn) => btn.classList.remove("active"));
-        this.classList.add("active");
-
-        const slot = this.getAttribute("data-slot");
-        selectedSlotText.textContent = slot;
-        selectedSlotInput.value = slot;
-      });
-    });
-
-    bookingForm.addEventListener("submit", function (e) {
-      if (!selectedSlotInput.value) {
-        e.preventDefault();
-        alert("Please select a time slot before submitting.");
-      }
-    });
-  });
-</script>

@@ -2,7 +2,7 @@
 title: Golf Panels Project No.4
 # subtitle: Website Design
 layout: default
-modal-id: 5
+modal-id: 6
 date: 2025-11-01
 img: golf4-1.jpg
 # thumbnail: dreams-thumbnail.png
