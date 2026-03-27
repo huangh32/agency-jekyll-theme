@@ -1118,7 +1118,7 @@ layout: style
 /* ========================================
    OUR STORY SECTION BRGIN
 ======================================== */
-.story-section {
+/* .story-section {
   position: relative;
   padding: 110px 0;
   overflow: hidden;
@@ -1297,10 +1297,8 @@ layout: style
   .story-side-card h3 {
     font-size: 21px;
   }
-}
-/* ========================================
-   OUR STORY - WARM LUXURY VERSION
-======================================== */
+} */
+
 /* ========================================
    OUR STORY - WARM LUXURY VERSION
 ======================================== */
@@ -1563,7 +1561,7 @@ layout: style
 }
 
 /* reveal animation base */
-.reveal-up,
+/* .reveal-up,
 .reveal-left,
 .reveal-right {
   opacity: 0;
@@ -1590,8 +1588,44 @@ layout: style
 .reveal-right.is-visible {
   opacity: 1;
   transform: translate(0, 0);
+} */
+
+/* reveal animation base */
+.reveal-up,
+.reveal-left,
+.reveal-right {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+  will-change: transform, opacity;
 }
 
+html.js-enabled .reveal-up,
+html.js-enabled .reveal-left,
+html.js-enabled .reveal-right {
+  opacity: 0;
+}
+
+html.js-enabled .reveal-up {
+  transform: translateY(40px);
+}
+
+html.js-enabled .reveal-left {
+  transform: translateX(-40px);
+}
+
+html.js-enabled .reveal-right {
+  transform: translateX(40px);
+}
+
+html.js-enabled .reveal-up.is-visible,
+html.js-enabled .reveal-left.is-visible,
+html.js-enabled .reveal-right.is-visible {
+  opacity: 1;
+  transform: none;
+}
 .delay-1 {
   transition-delay: 0.12s;
 }
