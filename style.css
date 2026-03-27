@@ -2088,3 +2088,707 @@ html.js-enabled .reveal-right.is-visible {
 /* ========================================
    BOOKING PAGE END
 ======================================== */
+
+/* ========================================
+   GLOBAL MOBILE / OVERFLOW FIX
+   Add this at the very end of style.css
+======================================== */
+
+/* ===== Global safe layout ===== */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+iframe,
+svg,
+canvas {
+  max-width: 100%;
+}
+
+section,
+.container,
+.container-fluid,
+.row {
+  max-width: 100%;
+}
+
+a,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* prevent bootstrap row from causing side overflow on mobile */
+@media (max-width: 767px) {
+  .container,
+  .container-fluid {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    overflow-x: clip;
+  }
+
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* ========================================
+   SERVICES SECTION MOBILE FIX
+======================================== */
+.services-cards-section {
+  overflow: hidden;
+}
+
+.service-card,
+.service-card-image,
+.service-card-content {
+  max-width: 100%;
+}
+
+.service-card-image img {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .services-cards-section {
+    padding: 58px 0;
+  }
+
+  .services-cards-section .section-heading {
+    font-size: 32px;
+    line-height: 1.18;
+    margin-bottom: 10px;
+  }
+
+  .services-cards-section .section-subheading {
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .services-card-row {
+    display: block;
+  }
+
+  .services-card-row > .col-md-6,
+  .services-card-row > .col-sm-12 {
+    width: 100%;
+    display: block;
+    margin-bottom: 22px;
+  }
+
+  .service-card {
+    min-height: auto;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .service-card:hover {
+    transform: none;
+  }
+
+  .service-card-image {
+    height: 220px;
+  }
+
+  .service-card:hover .service-card-image img {
+    transform: none;
+  }
+
+  .service-card-content {
+    padding: 22px 18px 20px;
+  }
+
+  .service-card-content h4 {
+    font-size: 24px;
+    line-height: 1.25;
+    min-height: auto;
+    margin-bottom: 12px;
+  }
+
+  .service-card-content p {
+    min-height: auto;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+
+  .service-card-content ul {
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+
+  .service-card-content ul li {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 8px;
+  }
+
+  .service-btn {
+    width: 100%;
+    text-align: center;
+    padding: 13px 18px;
+  }
+}
+
+/* ========================================
+   WHY US MOBILE FIX
+======================================== */
+.why-us-section,
+.why-us-content,
+.why-us-grid,
+.why-us-card {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .why-us-section {
+    padding: 68px 0;
+  }
+
+  .why-us-section .section-heading {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .why-us-section .section-subheading {
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 34px;
+  }
+
+  .why-us-grid {
+    display: block;
+  }
+
+  .why-us-grid > [class*="col-"] {
+    width: 100%;
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .why-us-card {
+    min-height: auto;
+    padding: 28px 18px;
+    border-radius: 16px;
+    margin-bottom: 0;
+  }
+
+  .why-us-card:hover {
+    transform: none;
+  }
+
+  .why-us-icon {
+    width: 78px;
+    height: 78px;
+    margin-bottom: 16px;
+  }
+
+  .why-us-icon img {
+    width: 94px;
+    height: 94px;
+  }
+
+  .why-us-card h4 {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .why-us-card p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+}
+
+/* ========================================
+   PROCESS MOBILE FIX
+======================================== */
+.process-section,
+.process-wrapper,
+.process-step,
+.process-step.process-card {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .process-section {
+    padding: 68px 0;
+  }
+
+  .process-section .section-heading {
+    margin-bottom: 36px;
+  }
+
+  .process-section .section-heading h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+
+  .process-wrapper {
+    display: block;
+  }
+
+  .process-step {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .process-step.process-card {
+    min-height: auto;
+    padding: 24px 18px;
+    border-radius: 16px;
+  }
+
+  .process-step.process-card:hover {
+    transform: none;
+  }
+
+  .process-icon {
+    width: 102px;
+    height: 102px;
+    margin-bottom: 18px;
+  }
+
+  .process-icon img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .process-step h3 {
+    font-size: 18px;
+    min-height: auto;
+    margin-bottom: 10px;
+  }
+
+  .process-step p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .process-arrow {
+    display: none !important;
+  }
+}
+
+/* ========================================
+   STORY MOBILE FIX
+======================================== */
+.story-section,
+.story-section .container,
+.story-content-row,
+.story-text-card,
+.story-side-card,
+.story-location-card,
+.story-image-wrap,
+.story-main-image,
+.story-mini-card,
+.story-bottom-quote {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .story-section {
+    padding: 68px 0;
+    overflow: hidden;
+  }
+
+  .story-section .section-heading {
+    font-size: 30px;
+    line-height: 1.18;
+    letter-spacing: 1px;
+  }
+
+  .story-subheading {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .story-content-row {
+    display: block;
+  }
+
+  .story-content-row > [class*="col-"] {
+    width: 100%;
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .story-text-card,
+  .story-side-card,
+  .story-location-card,
+  .story-mini-card,
+  .story-bottom-quote {
+    padding: 22px 18px;
+    border-radius: 16px;
+  }
+
+  .story-text-card p,
+  .story-side-card p,
+  .story-location-card p,
+  .story-mini-card p,
+  .story-bottom-quote p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .story-side-card h3,
+  .story-mini-card h3 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .story-image-wrap,
+  .story-main-image {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .story-main-image img,
+  .story-image-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* ========================================
+   BOOKING MOBILE FIX
+======================================== */
+.booking-section,
+.booking-section .container,
+.booking-row,
+.booking-info-card,
+.booking-calendar-card,
+.booking-embed-shell,
+.booking-iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .booking-section {
+    padding: 68px 0;
+    overflow: hidden;
+  }
+
+  .booking-section .section-heading {
+    font-size: 30px;
+    line-height: 1.18;
+  }
+
+  .booking-section .section-subheading {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .booking-row {
+    display: block;
+  }
+
+  .booking-row > [class*="col-"] {
+    width: 100%;
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .booking-info-card,
+  .booking-calendar-card {
+    padding: 22px 18px;
+    border-radius: 18px;
+  }
+
+  .booking-calendar-top h3 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .booking-calendar-top p,
+  .booking-info-text,
+  .booking-contact-item a,
+  .booking-contact-item span,
+  .booking-highlight-box p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .booking-highlight-box {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .booking-highlight-box h3 {
+    font-size: 20px;
+  }
+
+  .booking-contact-item {
+    padding: 14px 16px;
+  }
+
+  .booking-embed-shell {
+    border-radius: 16px;
+  }
+
+  .booking-iframe {
+    width: 100%;
+    min-height: 820px;
+    border: 0;
+  }
+}
+
+/* ========================================
+   CONTACT MOBILE FIX
+======================================== */
+.contact-section,
+.contact-section .container,
+.contact-email,
+.contact-socials,
+.contact-divider,
+.contact-quote-btn {
+  max-width: 100%;
+}
+
+.contact-section {
+  overflow: hidden;
+}
+
+.contact-email {
+  white-space: normal;
+}
+
+@media (max-width: 991px) {
+  .contact-quote-btn {
+    min-width: 0 !important;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-section {
+    padding: 68px 0;
+  }
+
+  .contact-section .section-heading {
+    font-size: 30px;
+    line-height: 1.18;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+
+  .contact-subtext {
+    margin: 0 auto 28px;
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 0;
+  }
+
+  .contact-email-wrap {
+    margin-bottom: 26px;
+  }
+
+  .contact-email {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: left;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .contact-email i {
+    font-size: 22px;
+    width: auto;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .contact-follow-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .contact-socials {
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .social-circle {
+    width: 64px;
+    height: 64px;
+    font-size: 28px;
+  }
+
+  .contact-divider {
+    margin-bottom: 26px;
+  }
+
+  .contact-divider::after {
+    width: 48px;
+  }
+
+  .contact-cta-note {
+    margin: 0 0 14px;
+    font-size: 16px;
+    line-height: 1.55;
+    padding: 0 4px;
+  }
+
+  .contact-quote-btn {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0 !important;
+    padding: 15px 16px;
+    border-radius: 12px;
+    font-size: 17px;
+    line-height: 1.35;
+    letter-spacing: 0.2px;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+/* ========================================
+   PORTFOLIO MOBILE FIX
+======================================== */
+#portfolio,
+#portfolio .container,
+#portfolio .row,
+#portfolio .portfolio-item,
+#portfolio .portfolio-link,
+#portfolio .portfolio-image-wrap,
+#portfolio .portfolio-caption,
+.portfolio-carousel,
+.portfolio-carousel .carousel-inner,
+.portfolio-carousel .item,
+.portfolio-carousel img {
+  max-width: 100%;
+}
+
+#portfolio {
+  overflow: hidden;
+}
+
+#portfolio .portfolio-image-wrap {
+  overflow: hidden;
+}
+
+#portfolio .portfolio-image-wrap img {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  #portfolio .row {
+    display: block;
+  }
+
+  #portfolio .portfolio-item {
+    width: 100%;
+    display: block;
+    margin-bottom: 22px;
+  }
+
+  #portfolio .portfolio-image-wrap {
+    height: 240px;
+  }
+
+  #portfolio .portfolio-caption {
+    min-height: auto;
+    padding: 18px 16px;
+  }
+
+  #portfolio .portfolio-caption h4 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  #portfolio .portfolio-caption p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .portfolio-carousel {
+    margin-bottom: 26px;
+  }
+
+  .portfolio-carousel .carousel-inner > .item > img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+  }
+
+  .portfolio-carousel .carousel-control.left,
+  .portfolio-carousel .carousel-control.right {
+    width: 14%;
+  }
+
+  .portfolio-carousel .arrow-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 28px;
+  }
+
+  .portfolio-carousel .carousel-indicators {
+    bottom: -22px;
+  }
+}
+
+/* ========================================
+   EXTRA SAFETY
+======================================== */
+@media (max-width: 767px) {
+  .contact-section *,
+  .story-section *,
+  .booking-section *,
+  .process-section *,
+  .why-us-section *,
+  .services-cards-section *,
+  #portfolio * {
+    max-width: 100%;
+  }
+}
